@@ -1,0 +1,21 @@
+
+    <div class="buttons">
+
+        <button (click)="month('November')">NOVEMBER-2024</button>
+
+        <button (click)="month('January')">JANUARY-2025</button>
+
+        <button (click)="month('March')">MARCH-2025</button>
+
+    </div>
+    <div class="card">
+
+        <div *ngFor="let car of filteredcars" class="product-card" >
+            <img [src]="car.imageUrl">
+            <h4>{{ car.name }}</h4> 
+            <p>Type: {{ car.type }}</p>           
+            <p>Chances: {{ car.chances }}</p>
+            <p class="price">Estimated Price: {{ car.price }}</p>
+            <p class="month">Expected Month: {{ car.month }}</p>
+
+    </div>

@@ -1,0 +1,33 @@
+<nav class="navbar">
+    <div class="logo">
+    <a  matTooltip="HOME" routerLink="home"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vBWYRCzKEiLhaHG3PexerjSsmhHe9xFzDA&s" alt="logo" height="30"> Car Showroom</a>
+    </div>
+    <ul class="row-items">
+        <li class="nav-item">
+            <a matTooltip="Our All Cars Models" routerLink="all" routerLinkActive="active">All</a>
+        </li>
+        <li class="nav-item">
+            <a  matTooltip="Our Upcoming and Newly Launches are here" routerLink="upcoming" routerLinkActive="active">Upcoming</a>
+        </li>
+        <li class="nav-item">
+            <a  matTooltip="Our All SUVs are here" routerLink="suv" routerLinkActive="active">SUVs</a>
+        </li>
+        <li class="nav-item">
+            <a  matTooltip="Our all EVs are here" routerLink="ev" routerLinkActive="active">EVs</a>
+        </li>
+
+        <div class="search-bar">
+            <input type="text" routerLink="search" placeholder="Search here"  />
+            <button class="btn-search">Search</button>
+          </div>
+
+        <li class="nav-item">
+            <a  matTooltip="Wishlist" routerLink="wishlist" routerLinkActive="active"><img src="https://img.icons8.com/?size=80&id=rMdkAyHngv7o&format=png" alt="" height="25"></a>
+        </li>
+        <li class="nav-item">
+            <a  matTooltip="Login" routerLink="login" routerLinkActive="active"><img src="https://cdn.vectorstock.com/i/1000v/97/03/user-sign-white-icon-vector-15479703.avif" alt="" height="25"></a>
+        </li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>

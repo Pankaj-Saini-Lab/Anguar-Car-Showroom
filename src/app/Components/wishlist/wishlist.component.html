@@ -1,0 +1,8 @@
+<div class="wishlist">
+    <div *ngFor="let item of wishlist" class="wishlist-item">
+      <img [src]="item.imageUrl">
+      <h4>{{ item.name }}</h4>
+      <p>Reviews: {{ item.reviews }}</p>
+      <p>Price: {{ item.price }}</p>
+    </div>
+</div>

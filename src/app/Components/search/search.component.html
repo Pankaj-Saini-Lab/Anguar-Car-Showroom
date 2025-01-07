@@ -1,0 +1,11 @@
+
+<div class="product-grid" *ngIf="data">
+    
+    <div class="product-card" *ngFor="let item of data">
+        <img [src]="item.imageUrl">
+        <h4>{{ item.name }}</h4>
+        <p>Reviews <br>{{ item.reviews }}</p>
+        <p class="price">{{ item.price }}</p>
+    </div>
+</div>
+
